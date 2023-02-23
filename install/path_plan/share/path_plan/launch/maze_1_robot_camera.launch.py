@@ -8,7 +8,7 @@ from scripts import GazeboRosPaths
 def generate_launch_description():
     package_share_dir = get_package_share_directory("path_plan")
     urdf_file = os.path.join(package_share_dir, "urdf", "robot_model.urdf")
-    world_file = os.path.join(package_share_dir, "worlds", "maze1.world")
+    world_file = os.path.join(package_share_dir, "worlds", "maze.world")
 
     model_path, plugin_path, media_path = GazeboRosPaths.get_paths()
     env = {

@@ -32,5 +32,4 @@ test/test_flake8.py
 test/test_pep257.py
 urdf/robot_model.urdf
 worlds/maze.world
-worlds/maze1.world
 worlds/maze_2.world

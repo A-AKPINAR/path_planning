@@ -1,0 +1,28 @@
+[0.400s] Invoking command in '/home/aysenur/path_planning/src/path_plan': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed
+[0.530s] running egg_info
+[0.530s] writing ../../build/path_plan/path_plan.egg-info/PKG-INFO
+[0.531s] writing dependency_links to ../../build/path_plan/path_plan.egg-info/dependency_links.txt
+[0.531s] writing entry points to ../../build/path_plan/path_plan.egg-info/entry_points.txt
+[0.531s] writing requirements to ../../build/path_plan/path_plan.egg-info/requires.txt
+[0.531s] writing top-level names to ../../build/path_plan/path_plan.egg-info/top_level.txt
+[0.553s] reading manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[0.554s] writing manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[0.554s] running build
+[0.554s] running build_py
+[0.554s] copying path_plan/maze_gen.py -> /home/aysenur/path_planning/build/path_plan/build/lib/path_plan
+[0.554s] copying path_plan/pathplanning.py -> /home/aysenur/path_planning/build/path_plan/build/lib/path_plan
+[0.555s] running install
+[0.556s] running install_lib
+[0.556s] copying /home/aysenur/path_planning/build/path_plan/build/lib/path_plan/maze_gen.py -> /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan
+[0.557s] copying /home/aysenur/path_planning/build/path_plan/build/lib/path_plan/pathplanning.py -> /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan
+[0.557s] byte-compiling /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan/maze_gen.py to maze_gen.cpython-38.pyc
+[0.559s] byte-compiling /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan/pathplanning.py to pathplanning.cpython-38.pyc
+[0.561s] running install_data
+[0.562s] copying launch/maze_1_robot_camera.launch.py -> /home/aysenur/path_planning/install/path_plan/share/path_plan/launch
+[0.562s] running install_egg_info
+[0.563s] removing '/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info' (and everything under it)
+[0.563s] Copying ../../build/path_plan/path_plan.egg-info to /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info
+[0.564s] running install_scripts
+[0.575s] Installing bot_move script to /home/aysenur/path_planning/install/path_plan/lib/path_plan
+[0.576s] writing list of installed files to '/home/aysenur/path_planning/build/path_plan/install.log'
+[0.590s] Invoked command in '/home/aysenur/path_planning/src/path_plan' returned '0': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed

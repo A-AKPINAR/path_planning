@@ -3,12 +3,7 @@ import random
 
 
 class Cell:
-    """A cell in the maze.
 
-    A maze "Cell" is a point in the grid which may be surrounded by walls to
-    the north, east, south or west.
-
-    """
 
     # A wall separates a pair of cells in the N-S or W-E directions.
     wall_pairs = {'N': 'S', 'S': 'N', 'E': 'W', 'W': 'E'}
@@ -72,7 +67,6 @@ class Maze:
         return '\n'.join(maze_rows)
 
     def find_valid_neighbours(self, cell):
-        """Return a list of unvisited neighbours to cell."""
 
         delta = [('W', (-1, 0)),
                  ('E', (1, 0)),

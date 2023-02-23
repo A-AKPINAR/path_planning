@@ -414,7 +414,7 @@ class a_star(dijisktra):
                     print("Vertex adjacent to {} is {}".format(u,v))
                     v_idx = self.vrtxs2idxs[v]
 
-                    #if we have not found shortest distance to v + new found cost2Node < known cost2node ==> Update Cost2node for neighbor node
+        
                     if ( self.minHeap.isInMinHeap(v_idx) and (dist[u_idx]!=1e7) and
                        (    (graph[u][v]["cost"] + cost2node[u_idx]) < cost2node[v_idx] )    ):
 
@@ -423,7 +423,7 @@ class a_star(dijisktra):
                        self.minHeap.decreaseKey(v_idx, dist[v_idx])
                        parent[v_idx] = u_idx
             
-            # End Condition: End goal has already been visited. 
+     
 
             if (u == end):
                 break
