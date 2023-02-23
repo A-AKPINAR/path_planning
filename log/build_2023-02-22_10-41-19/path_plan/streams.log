@@ -1,0 +1,22 @@
+[1.002s] Invoking command in '/home/aysenur/path_planning/src/path_plan': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed
+[1.352s] running egg_info
+[1.352s] writing ../../build/path_plan/path_plan.egg-info/PKG-INFO
+[1.353s] writing dependency_links to ../../build/path_plan/path_plan.egg-info/dependency_links.txt
+[1.353s] writing entry points to ../../build/path_plan/path_plan.egg-info/entry_points.txt
+[1.353s] writing requirements to ../../build/path_plan/path_plan.egg-info/requires.txt
+[1.353s] writing top-level names to ../../build/path_plan/path_plan.egg-info/top_level.txt
+[1.405s] reading manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[1.410s] writing manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[1.412s] running build
+[1.412s] running build_py
+[1.413s] running install
+[1.415s] running install_lib
+[1.418s] running install_data
+[1.419s] copying launch/maze_1_robot_camera.launch.py -> /home/aysenur/path_planning/install/path_plan/share/path_plan/launch
+[1.420s] running install_egg_info
+[1.423s] removing '/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info' (and everything under it)
+[1.423s] Copying ../../build/path_plan/path_plan.egg-info to /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info
+[1.424s] running install_scripts
+[1.453s] Installing bot_move script to /home/aysenur/path_planning/install/path_plan/lib/path_plan
+[1.453s] writing list of installed files to '/home/aysenur/path_planning/build/path_plan/install.log'
+[1.492s] Invoked command in '/home/aysenur/path_planning/src/path_plan' returned '0': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed

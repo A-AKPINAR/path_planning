@@ -1,0 +1,3 @@
+[console_scripts]
+bot_move = path_plan.final_script:main
+
