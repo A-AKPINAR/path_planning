@@ -51,15 +51,15 @@ class Debugging:
     # create switch for ON/OFF functionality
     debugging_SW = 'Debug'
     cv2.createTrackbar(debugging_SW, 'CONFIG',False,True,nothing)
-    debuggingLoc_SW = 'Debug Localization'
+    debuggingLoc_SW = 'Localization'
     cv2.createTrackbar(debuggingLoc_SW, 'CONFIG',False,True,nothing)
-    debuggingMapping_SW = 'Debug Mapping'
+    debuggingMapping_SW = 'Mapping'
     cv2.createTrackbar(debuggingMapping_SW, 'CONFIG',False,True,nothing)
-    debuggingPathPlanning_SW = 'Debug Path Finding.'
+    debuggingPathPlanning_SW = 'Path Finding.'
     cv2.createTrackbar(debuggingPathPlanning_SW, 'CONFIG',False,True,nothing)
-    debuggingMotionPlanning_SW = 'Debug Motion Planning '
+    debuggingMotionPlanning_SW = 'Motion Planning '
     cv2.createTrackbar(debuggingMotionPlanning_SW, 'CONFIG',False,True,nothing)
-    debugging_Live = 'Debug Live'
+    debugging_Live = 'Live'
     cv2.createTrackbar(debugging_Live, 'CONFIG',False,True,nothing)
 
     def setDebugParameters(self):

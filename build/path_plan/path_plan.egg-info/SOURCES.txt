@@ -8,9 +8,9 @@ setup.py
 ../../build/path_plan/path_plan.egg-info/requires.txt
 ../../build/path_plan/path_plan.egg-info/top_level.txt
 ../../build/path_plan/path_plan.egg-info/zip-safe
-launch/gazebo.launch.py
-launch/maze_1_robot_camera.launch.py
-launch/maze_2_robot_camera.launch.py
+launch/env_2_camera.launch.py
+launch/env_w_camera.launch.py
+launch/gazebo.py
 launch/rviz.launch.py
 meshes/base_link.stl
 meshes/front_caster.stl
@@ -31,5 +31,5 @@ test/test_copyright.py
 test/test_flake8.py
 test/test_pep257.py
 urdf/robot_model.urdf
-worlds/maze.world
-worlds/maze_2.world
+worlds/gazebo_env.world
+worlds/gazebo_env2.world

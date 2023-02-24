@@ -123,7 +123,7 @@ class motionplanner():
                 img_shortest_path = cv2.circle(img_shortest_path, path[path_i-1], 3, (0,255,0),2)
                 Done_pt = path[path_i-1]
             img_shortest_path = cv2.circle(img_shortest_path, curr_goal, 3, (0,140,255),2)
-            Doing_pt = curr_goal #---> completing first goal
+            Doing_pt = curr_goal
         else:
 
             img_shortest_path = cv2.circle(img_shortest_path, path[path_i], 10, (0,255,0))
@@ -143,7 +143,7 @@ class motionplanner():
 
         st = "Path Length = ( {} ) , Current Path Step = ( {} )".format(len(path),self.path_iter)        
         
-        frame_disp = cv2.putText(frame_disp, st, (robot_localizer.orig_X-50,robot_localizer.orig_Y-30), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,255))
+        frame_disp = cv2.putText(frame_disp, st, (robot_localizer.orig_X-50,robot_localizer.orig_Y-150), cv2.FONT_HERSHEY_PLAIN, 1.2, (0,0,255))
         if robot_setup.debug and robot_setup.debug_motionplanning:
             cv2.imshow("Maze: Shortest Path and Robot Location",img_shortest_path)
         else:
@@ -301,8 +301,8 @@ class motionplanner():
                 self.goal_pose_x = path[self.path_iter][0]
                 self.goal_pose_y = path[self.path_iter][1]
                 
-                if pygame.mixer.music.get_busy() == False:
-                    pygame.mixer.music.play()
+               # if pygame.mixer.music.get_busy() == False:
+                   # pygame.mixer.music.play()
 
 #main func
     def nav_path(self,bot_loc,path,velocity,velocity_publisher):

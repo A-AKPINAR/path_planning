@@ -1,0 +1,24 @@
+[1.741s] Invoking command in '/home/aysenur/path_planning/src/path_plan': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed
+[2.220s] running egg_info
+[2.220s] writing ../../build/path_plan/path_plan.egg-info/PKG-INFO
+[2.220s] writing dependency_links to ../../build/path_plan/path_plan.egg-info/dependency_links.txt
+[2.220s] writing entry points to ../../build/path_plan/path_plan.egg-info/entry_points.txt
+[2.221s] writing requirements to ../../build/path_plan/path_plan.egg-info/requires.txt
+[2.221s] writing top-level names to ../../build/path_plan/path_plan.egg-info/top_level.txt
+[2.292s] reading manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[2.293s] writing manifest file '../../build/path_plan/path_plan.egg-info/SOURCES.txt'
+[2.293s] running build
+[2.293s] running build_py
+[2.293s] copying path_plan/features.py -> /home/aysenur/path_planning/build/path_plan/build/lib/path_plan
+[2.293s] running install
+[2.294s] running install_lib
+[2.295s] copying /home/aysenur/path_planning/build/path_plan/build/lib/path_plan/features.py -> /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan
+[2.295s] byte-compiling /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan/features.py to features.cpython-38.pyc
+[2.297s] running install_data
+[2.298s] running install_egg_info
+[2.304s] removing '/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info' (and everything under it)
+[2.304s] Copying ../../build/path_plan/path_plan.egg-info to /home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages/path_plan-0.0.0-py3.8.egg-info
+[2.310s] running install_scripts
+[2.352s] Installing bot_move script to /home/aysenur/path_planning/install/path_plan/lib/path_plan
+[2.355s] writing list of installed files to '/home/aysenur/path_planning/build/path_plan/install.log'
+[2.438s] Invoked command in '/home/aysenur/path_planning/src/path_plan' returned '0': PYTHONPATH=/home/aysenur/path_planning/build/path_plan/prefix_override:/home/aysenur/path_planning/install/path_plan/lib/python3.8/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/path_plan build --build-base /home/aysenur/path_planning/build/path_plan/build install --record /home/aysenur/path_planning/build/path_plan/install.log --install-scripts $base/lib/path_plan --single-version-externally-managed

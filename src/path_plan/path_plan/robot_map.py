@@ -40,7 +40,7 @@ class mapper():
 
         self.graphified = False
 
-        # cropping control -->  removing maze boundary
+        # cropping control -->  removing env boundary
         self.crp_amt = 5
 
         # graph object for storing env
@@ -94,15 +94,15 @@ class mapper():
               
                 if not self.connected_left:
                     self.display_connected_nodes(curr_node, neighbor_node,"LEFT",(0,0,255))
-                    # Vertex --> left neighbor.                    
+                           
                     self.connected_left = True
-                    # Check left corner 
+     
                     step_l = 1
                     step_up = 1
                     self.connect_neighbors(maze, node_row, node_col, case,step_l,step_up,totl_cnncted)
                 if not self.connected_upleft:
                     self.display_connected_nodes(curr_node, neighbor_node,"UPLEFT",(0,128,255))
-                    # Vertex -->  up-left neighbor.
+               
                     self.connected_upleft = True
                     # top route 
                     step_l  = 0
@@ -110,15 +110,14 @@ class mapper():
                     self.connect_neighbors(maze, node_row, node_col, case,step_l,step_up,totl_cnncted)
                 if not self.connected_up:
                     self.display_connected_nodes(curr_node, neighbor_node,"UP",(0,255,0))
-                    # Vertex to --> its up neighbor.
+                
                     self.connected_up = True
-                    # top-right route 
+            
                     step_l  = -1
                     step_up = 1
                     self.connect_neighbors(maze, node_row, node_col, case,step_l,step_up,totl_cnncted)
                 if not self.connected_upright:
                     self.display_connected_nodes(curr_node, neighbor_node,"UPRIGHT",(255,0,0))
-                    # Vertex --> its up-right neighbor.
                     self.connected_upright = True
 
             
@@ -186,7 +185,7 @@ class mapper():
     @staticmethod
     def get_surround_pixel_intensities(maze,curr_row,curr_col):
 
-        # binary thrsholding  (+ values ==> 1 n - values ==> 0)
+
         maze = cv2.threshold(maze, 1, 1, cv2.THRESH_BINARY)[1]
 
         rows = maze.shape[0]
@@ -198,7 +197,7 @@ class mapper():
         lft_col = False
         rgt_col = False
 
-        # Checking if there is a boundary condition
+        # check --> boundary condition
         if (curr_row==0):
             top_row = True
         if (curr_row == (rows-1)):
@@ -385,7 +384,7 @@ class mapper():
 
             # Step 1:  thinning on maze to reduce area to paths that rbot could follow.
             thinned = cv2.ximgproc.thinning(extracted_maze)
-            # Step 2: Dilate and Perform thining again to minimize unneccesary interest point (i.e:turns)
+            # Step 2: Dilate and Perform thining again to minimize unneccesary interest point 
             kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE,(2,2))
             thinned_dilated = cv2.morphologyEx(thinned, cv2.MORPH_DILATE, kernel)
             _, bw2 = cv2.threshold(thinned_dilated, 0, 255, cv2.THRESH_BINARY | cv2.THRESH_OTSU)        
@@ -410,7 +409,6 @@ class mapper():
         else:
 
             if robot_setup.debug and robot_setup.debug_mapping:
-                #cv2.imshow("Nodes Conected", self.robot_cnnct)
                 cv2.imshow("Environment with Interest Points", self.robot_cnnct)
             else:
                 try:

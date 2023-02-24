@@ -337,7 +337,7 @@ class dijisktra():
                     print("Vertex adjacent to {} is {}".format(u,v))
                     v_idx = self.vrtxs2idxs[v]
 
-                    #if shortest distance is not found --> to v + new found dist < known dist ==> Update dist for v
+                   
                     if ( self.minHeap.isInMinHeap(v_idx) and (dist[u_idx]!=1e7) and
                        (    (graph[u][v]["cost"] + dist[u_idx]) < dist[v_idx] )    ):
 
@@ -395,7 +395,7 @@ class a_star(dijisktra):
             self.idxs2vrtxs[idx] = v
 
         cost2node[start_idx] = 0
-        # Total cost(Start Node) = Cost2Node(Start) + Heuristic Cost(Start,End)
+
         dist[start_idx] = cost2node[start_idx] + self.euc_d(start, end)
         self.minHeap.decreaseKey(start_idx, dist[start_idx])
 
